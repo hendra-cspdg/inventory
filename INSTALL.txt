@@ -1,0 +1,2 @@
+- Buat database dengan nama inventory
+- import file inventory.sql
