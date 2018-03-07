@@ -1455,7 +1455,8 @@ CREATE TABLE `user` (
   `password` varchar(250) DEFAULT NULL,
   `email` varchar(200) DEFAULT NULL,
   `tgl_lahir` date DEFAULT NULL,
-  `nama_user` varchar(100) DEFAULT NULL
+  `nama_user` varchar(100) DEFAULT NULL,
+  `picture` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -1463,12 +1464,12 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `id_role`, `username`, `password`, `email`, `tgl_lahir`, `nama_user`) VALUES
-(1, 1, 'admin', 'inS4UGgjBAP.I', 'admin@gmail.com', '1990-05-16', 'Administrator'),
-(3, 3, 'PersonInCharge', 'inclvEgHyceKg', 'PersonInCharge@gmail.com', '2016-01-13', 'Person In Charge'),
-(4, 4, 'kepalaPic', 'in.UMnurQd522', 'purchasing@gmail.com', '2016-01-13', 'Manajer PIC'),
-(8, 7, 'karyawanGudang', 'in//bojaFsFXI', 'karyawangudang@gmail.com', '2016-01-13', 'Gudang'),
-(10, 9, 'karyawanProduksi', 'in//bojaFsFXI', 'karyawanproduksi@gmail.com', '2016-01-13', 'Produksi'),
-(11, 10, 'KepalaProduksi', 'inOt/0hUzQij2', 'kepalaproduksi@gmail.com', '2016-01-13', 'Kepala Produksi');
+(1, 1, 'admin', 'inS4UGgjBAP.I', 'admin@gmail.com', '1990-05-16', 'Administrator','images\\system-image\\person.png'),
+(3, 3, 'PersonInCharge', 'inclvEgHyceKg', 'PersonInCharge@gmail.com', '2016-01-13', 'Person In Charge','images\\system-image\\person.png'),
+(4, 4, 'kepalaPic', 'in.UMnurQd522', 'purchasing@gmail.com', '2016-01-13', 'Manajer PIC','images\\system-image\\person.png'),
+(8, 7, 'karyawanGudang', 'in//bojaFsFXI', 'karyawangudang@gmail.com', '2016-01-13', 'Gudang','images\\system-image\\person.png'),
+(10, 9, 'karyawanProduksi', 'in//bojaFsFXI', 'karyawanproduksi@gmail.com', '2016-01-13', 'Produksi','images\\system-image\\person.png'),
+(11, 10, 'KepalaProduksi', 'inOt/0hUzQij2', 'kepalaproduksi@gmail.com', '2016-01-13', 'Kepala Produksi','images\\system-image\\person.png');
 
 --
 -- Indexes for dumped tables
